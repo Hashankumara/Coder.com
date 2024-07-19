@@ -1,0 +1,368 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+
+    --first-color: #4bb973;
+    --first-color-light: #e3dadf;
+    --first-color-alt:  #5fe279;
+    --first-color-dark: #c0dd98;
+    --first-color-gray: #c0dd98;
+    --title-color: #5cff98;
+    --title-color-black: #1F2833;
+    --text-color: #c5c6c7;
+    --text-color-light: #b7b7b8;
+    --body-color: #282A35;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Red Hat Display', sans-serif;
+    --second-font: 'Kaushan Script', cursive;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.5rem;
+    --big-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-bold: 700;
+    --font-black: 900;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 6rem;
+        --bigger-font-size: 3.5rem;
+        --big-font-size: 2.75rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+
+
+
+body {
+   background-image: url('images/backgroundimg.jpg'); /* Replace 'path/to/your/background/image.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.hidden {
+    display: none;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(17, 23, 31, 0.636); /* Adjust the opacity as needed (0.5 for 50% opacity) */
+    z-index: -1; /* Ensure that the overlay is behind other content */
+}
+
+/* Footer section */
+.footer {
+    background-color: #333; /* Change the background color as needed */
+    color: #fff; /* Change text color as needed */
+    padding: 50px 0; /* Adjust padding as needed */
+    position: sticky;
+    bottom: -560px;
+    width: 100%;
+     /* Ensure footer is above other content */
+}
+
+.footer::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #080707; /* Light grey background */
+     /* Padding around content */
+    margin-top: 40px; /* Space between content above and the footer */
+    border-top: 2px solid #010101; /* Optional top border for visual separation */
+}
+
+
+
+
+
+.footer__container {
+    row-gap: 4rem;
+    padding-top: 1rem;
+}
+
+.footer__logo,
+.footer__description {
+    color: var(--title-color);
+}
+
+.footer__logo,
+.footer__form,
+.footer__social {
+    display: flex;
+}
+
+.footer__logo {
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: var(--font-bold);
+    margin-bottom: 3.0rem;
+}
+
+.footer__logo img {
+    width: 1.5rem;
+}
+
+.footer__description {
+    margin-bottom: 2rem;
+}
+
+.footer__form {
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer__input {
+    padding: 20px 56px 20px 24px;
+    border: 2px solid var(--first-color-light);
+    background: transparent;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 30px;
+}
+
+.footer__btn {
+    border-radius: 30px;
+}
+
+.footer__content,
+.footer__links,
+.footer__group {
+    display: grid;
+}
+
+.footer__content {
+    grid-template-columns: repeat(2, max-content);
+    gap: 2.5rem 3.5rem;
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.footer__links {
+    row-gap: .75rem;
+}
+
+.footer__link {
+    color: var(--text-color);
+    transition: color .3s;
+}
+
+.footer__link:hover {
+    color: var(--first-color);
+}
+
+.footer__group {
+    margin-top: 5rem;
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.footer__social {
+    column-gap: 1.25rem;
+}
+
+.footer__social-link { 
+    display: inline-flex;
+    padding: .35rem;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--title-color-black);
+    transition: background .4s;
+}
+
+.footer__social-link:hover {
+    background-color: var(--first-color-dark);
+}
+
+.footer__copy {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.footer__message {
+    position: absolute;
+    transform: translateY(1rem);
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(79, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(79, 4%, 25%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(79, 4%, 35%);
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--first-color);
+    display: inline-flex;
+    padding: .35rem;
+    color: var(--title-color-black);
+    font-size: 1.25rem;
+    z-index: var(--z-tooltip);
+    transition: .3s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}
+
+
+
+
+
+
+/* Header section */
+.header {
+    z-index: 1000;
+    position: sticky;
+    top: -10px;
+    background-color: #333; /* Background color of the header */
+    color: #fff; /* Text color of the header */
+    padding: 20px; /* Padding around the header content */
+    box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
+}
+
+.nav.container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center; /* Align items vertically */
+}
+
+.nav__logo {
+    font-size: 24px; /* Size of the logo */
+    text-decoration: none; /* Remove underline from the logo */
+    color: #fff; /* Color of the logo */
+}
+
+.nav__menu {
+    display: flex; /* Display menu items as flex items */
+}
+
+.nav__list {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display menu items as flex items */
+}
+
+.nav__item {
+    margin-right: 20px; /* Margin between menu items */
+}
+
+.nav__link {
+    text-decoration: none; /* Remove underline from the links */
+    color: #fff; /* Color of the links */
+    font-size: 16px; /* Size of the links */
+}
+
+.nav__link:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.nav__button {
+    background-color: #fff; /* Background color of the button */
+    color: #333; /* Text color of the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav__button:hover {
+    background-color: #eee; /* Background color of the button on hover */
+}
+
+.nav__close {
+    display: none; /* Hide the close button initially */
+}
+
+@media (max-width: 768px) {
+    .nav__menu {
+        display: none; /* Hide the menu on small screens */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 100%; /* Align menu to the bottom of the header */
+        left: 0; /* Align menu to the left edge of the header */
+        width: 100%; /* Make menu full width */
+        background-color: #333; /* Background color of the menu */
+        padding: 20px; /* Padding inside the menu */
+    }
+
+    .nav__menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .nav__close {
+        display: block; /* Show the close button */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .nav__list {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .nav__item {
+        margin-bottom: 10px; /* Spacing between menu items */
+    }
+}
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="styleSlide.css">
+    <link rel="stylesheet" href="styleSubs.css">
+    <link rel="stylesheet" href="styleH1.css">
+    <link rel="stylesheet" href="styleBkgrd.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <link rel="stylesheet" href="styleSubForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="scriptval.js"></script>
+    <link rel="stylesheet" href="./style10.css">
+    <style>
+        .pageEditor {
+            background-color: transparent;
+        }
+        a {
+            padding-left: 30px;
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--_________________ HEADER ______________-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Coder.com</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="\index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="\About us.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="\quizz.html" class="nav__link">Quiz</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">Contact </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="\buy products.html" class="nav__link">Store</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="\gallery.html" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="\listingPage.html" class="nav__link">Review</a>
+                    </li>
+                    
+                  
+
+                    <div class="nav__link">
+                        <a href="\Sign up.html" class="button nav__button">
+                            Signup Now
+                        </a>
+                    </div>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!--______________ Toggle button ________________-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+            <!-- Title section -->
+            <div class="container5">
+                <div class="incontainer5">
+                    <h1>Hear from our learners!</h1>
+                </div>
+            </div>
+
+            <!-- Card slider section -->
+            <div class="incontainer2">
+                <div class="wrapper">
+                    
+                    <ul class="crsl">
+                        <!-- Card slider items go here -->
+                    </ul>
+                </div>
+            </div>
+            <!--get user review section-->
+            
+            
+              <!-- Subscription form section -->
+            <div class="incontainer20">
+                <div class="submit-form">
+                    <div class="left-r">
+                        <div class="form-outer-left">
+                            <form id="reviewForm">
+                               
+                                <label for="firstNameInput">First Name:</label><br>
+                                
+                                <input type="text" id="firstNameInput" name="firstNameInput" required><br>
+                                
+                                <label for="positionInput">Position:</label><br>
+                                
+                                <input type="text" id="positionInput" name="positionInput" required><br>
+                                
+                                <label for="ratingInput">Rating:</label><br>
+                                
+                                <input type="number" id="ratingInput" name="ratingInput" min="1" max="5" required><br>
+                                
+                                <label for="reviewTextInput">Review:</label><br>
+                                
+                                <textarea id="reviewTextInput" name="reviewTextInput" rows="4" required placeholder="Your opinion..."></textarea><br>
+                                
+                                <button type="submit">Submit Review</button>
+                              </form>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="right-l">
+                        <h2>Leave us a Review...</h2>
+                        <img src="images\review.png" alt="Description of the image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Subscription form section -->
+            <div class="incontainer3">
+                <div class="subscribe-form">
+                    <div class="left">
+                        <h2>Subscribe to our Newsletter!</h2>
+                        <p>Subscribe for personalized updates on programming languages and exclusive offers.</p>
+                    </div>
+                    <div class="right">
+                        <div class="form-outer">
+                            <form id="form" action="">
+                                <div class="input-control">
+                                    <input id="username" name="username" type="text" placeholder="Your Name">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="input-control">
+                                    <input id="email" name="email" type="text" placeholder="Your Email">
+                                    <div class="error"></div>
+                                </div>
+                                <button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Link to page Editor -->
+            <div class="pageEditor">
+                <a href="pageEditor.html" style="color:rgb(159, 152, 152);"  target="_blank">Link to page Editor</a>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">returns</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div id="footer">
+                            <h4>Contact US</h4>
+                            </div>
+                            
+                            <p>Email:learning@gmail.com</p>
+                            <p>Phone:0112 173 994</p>
+                            <p>Address:No25/37,2nd Lane,Colombo 07</p>
+                            <div class="nav__link">
+                                <a href="\Contactus.html" class="button nav__button">
+                                    Contact Us
+                                </a>
+                            </div>
+        
+                            
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+           </footer>
+        </div>
+    </div>
+    <script defer src="scriptAddRev.js"></script>
+    <script src="scriptSlide.js"></script>
+    <script src="scriptRevxml.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.incontainer2{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background:transparent;
+  
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  
+}
+
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .crsl{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  
+}
+
+
+.crsl :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crsl .card {
+  scroll-snap-align: start;
+  height: 370px;
+  list-style: none;
+  background: #e4f6e1;
+  opacity: 0.75;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid white;
+  
+}
+.crsl .card .img {
+  background:#010b03;
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.crsl .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.crsl .card p {
+  font-weight: 700;
+  font-size: 0.93rem;
+  margin: 10px 0 5px 30px;
+  padding: 0 30px 0 30px ;
+  
+  
+}
+.crsl .card .rating {
+  color: rgb(1, 9, 4);
+  margin: 1rem 0;
+  
+}
+
+.crsl .card span {
+  color: #67d563;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .crsl {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .crsl {
+    grid-auto-columns: 100%;
+  }
+}

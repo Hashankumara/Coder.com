@@ -1,0 +1,132 @@
+
+
+.incontainer20{
+  width:100%;
+  margin: auto;
+  height: 100vh;
+  background: transparent;
+  margin-top: 150px;
+  margin-bottom: -200px;
+}
+
+.submit-form{
+  position: relative;
+  bottom: 70px;
+  width: calc(100%);
+  opacity: 0.85;
+  background:#10181d;
+  border-radius: 0px;
+  display: grid;
+  gap: 0px;
+  padding: 40px 0 40px 70px;
+  grid-template-columns: repeat(2,1fr);
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.05);
+}
+.submit-form .right-l{
+
+  align-items: center;
+  
+}
+.submit-form .right-l img{
+  z-index: -1;
+  width: 400px;
+    height: auto;
+
+}
+.submit-form .right-l h2{
+  text-align: center;
+  font-size: 28px;
+  font-family: sans-serif;
+  line-height: 1.25;
+  
+  color:rgb(254, 252, 252);
+  margin: 50px 150px 10px ;
+  padding-left: 20px;
+  
+}
+.submit-form .right-l p{
+  text-align: center;
+  
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: sans-serif;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  color:rgb(255, 255, 255);
+    
+}
+
+.submit-form .left-r  .form-outer-left input{
+ 
+  display: block;
+  width: 50%;
+  padding: 4px ;
+  padding-left: 15px;
+  
+  border: 2px solid #5EFF95;
+  font-size: 15px;
+  border-radius: 15px;
+  margin : -10px 0 -20px 170px;
+  
+}
+.submit-form .left-r  .form-outer-left label{
+  
+  display: block;
+  width: 70%;
+  margin : 0 0 0 170px;
+  font-size: 15px;
+  color: white;
+}
+
+.submit-form .left-r  .form-outer-left textarea{
+  width:50%;
+  background: white;
+  padding: 1rem;
+  border: 2px solid #5EFF95;
+  font-size: 15px;
+  border-radius: .5rem;
+  outline: none;
+  resize: none;
+  margin : -10px 0 0 170px;
+  
+}
+
+.submit-form .left-r .form-outer-left{
+  align-items: center;
+}
+
+.submit-form .left-r .form-outer-left button{
+  
+  width: 50%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius:15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background:#5EFF95;
+  color:black;
+  box-shadow: 0px 2px 2px #3f826a ;
+  margin : 20px 0 0 170px;
+
+}
+
+.form-outer-left .input-control.success input {
+    border-color: #09c372;
+    border-width: 2px;
+}
+
+.form-outer-left .input-control.error input {
+    border-color: #ff3860;
+    border-width: 2px;
+}
+
+.form-outer-left .input-control .error {
+    color: #ff3860;
+    font-size: 13px;
+    height: 13px;
+}
+.form-outer-left .input-control input:focus {
+    color: #ffffff;
+    border-width: 2px;
+}

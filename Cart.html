@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="yuvin/cart/Cart.css">
+</head>
+<body>
+    <div class="shop">
+        <img id="shop" src="yuvin/cart/images/cart4.jpg" alt="cart image">
+        <div class="Shop_text">Cart</div>
+    </div>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Enter Promo Code:</td>
+                <td><input type="text" id="promo-code" name="promo-code"></td>
+                <td>  <button id="apply-promo-code">Apply</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">Grand Total</td>
+                <td id="grand-total"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <button id="refresh-cart">Refresh Cart</button>
+    <a href="payment field.html">
+    <button id="proceed-to-payment">Proceed to Payment</button>
+    </a>
+    <script src="yuvin/cart/Cart.js"></script>
+</body>
+</html>

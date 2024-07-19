@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="yuvin/buy/Buy products.css">
+    <link rel="stylesheet" href="yuvin/footer1.css">
+    <title> Buy products</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <ul>
+                <li><a href="\index.html">Home</a></li>
+                <li><a href="\about us.html">About</a></li>
+                <li><a href="\quizz.html">Quiz</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="\gallery.html">Gallery</a></li>
+                <li class="nav__item">
+                    <a href="ReviewPage/listingPage.html" class="nav__link">Review</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select name="">
+                    <option value="1">All</option>
+                    <option value="2">Books</option>
+                    <option value="3">Videos</option>
+                    
+                </select>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart">
+                <a href="Cart.html" > <!-- Add target="_blank" attribute to open in a new window -->
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-counter"></span>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="items" id="items-container">
+        <div class="row" id="items-row">
+            <!-- Items added directly in HTML -->
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Html book1.jpg" alt="Book">
+                <p class="item-name">The truth HTML 5</p>
+                <p class="item-price">$400</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/python book 1.jpg" alt="Book">
+                <p class="item-name">Python Programming for Beginners </p>
+                <p class="item-price">$350</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/php book 1.jpg" alt="Book">
+                <p class="item-name"> Programming PHP </p>
+                <p class="item-price">$250</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/sql book 1.jpg" alt="Book">
+                <p class="item-name">Getting Started with SQL </p>
+                <p class="item-price">$320</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/React book 1.jpg" alt="Book">
+                <p class="item-name">The Road to React</p>
+                <p class="item-price">$340</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Larawell bbok 1.jpg" alt="Book">
+                <p class="item-name">Laravel up & Running </p>
+                <p class="item-price">$400</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/Html video 1.jpg" alt="Videos">
+                <p class="item-name">Html video Series</p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Python video 1.jpg" alt="Videos">
+                <p class="item-name">Python video series</p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Php videos series 2.jpg" alt="Videos">
+                <p class="item-name">PHP video series</p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/sql video series.jpg" alt="Videos">
+                <p class="item-name">SQL video series</p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/React video series 1.jpg" alt="Videos">
+                <p class="item-name">React video series </p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Larawell video series.jpg" alt="Videos">
+                <p class="item-name">Laravel video series</p>
+                <p class="item-price">$500</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Node js book 1.png" alt="Books">
+                <p class="item-name">Get Programming with node js</p>
+                <p class="item-price">$450</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Mongodb book 1.jpg" alt="Books">
+                <p class="item-name">Mongodb Book</p>
+                <p class="item-price">$250</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Books">
+                <img src="yuvin/buy/images/Html book 2.jpg" alt="Books">
+                <p class="item-name">HTML 5 Second Edition</p>
+                <p class="item-price">$300</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/Python book 2.jpg" alt="Books">
+                <p class="item-name">Python Tricks the Book</p>
+                <p class="item-price">$250</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/SQL book 2.jpg" alt="Books">
+                <p class="item-name">SQL Cook Book</p>
+                <p class="item-price">$150</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/PHP book 3.jpg" alt="Books">
+                <p class="item-name">PHP & MY SQL</p>
+                <p class="item-price">$350</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/react book 2.png" alt="Books">
+                <p class="item-name">React js Documentation</p>
+                <p class="item-price">$150</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="item" data-type="Videos">
+                <img src="yuvin/buy/images/laravel book 2jpeg" alt="Books">
+                <p class="item-name">Practical Laravel</p>
+                <p class="item-price">$300</p>
+                <div class="item-actions">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div id="footer">
+                    <h4>Contact US</h4>
+                    </div>
+                    
+                    <p>Email:learning@gmail.com</p>
+                    <p>Phone:0112 173 994</p>
+                    <p>Address:No25/37,2nd Lane,Colombo 07</p>
+                    <div class="nav__link">
+                        <a href="\contactus.html" class="button nav__button">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <span class="footer__copy">
+                    &#169; Copyright <a href="editpage/Yuvin/pageEditor.html">Yuvin Mahawatta</a>. All rights reserved
+                </span>
+
+            </div>
+        </div>
+   </footer>
+   
+    <script src="yuvin/buy/Buy products.js"></script>
+    
+</body>
+</html>

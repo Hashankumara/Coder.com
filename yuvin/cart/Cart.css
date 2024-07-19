@@ -1,0 +1,168 @@
+/* Set background image for the entire page */
+body {
+    background-image: url('baim.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #282A35;
+    font-family: "poppins",sans-serif;;
+}
+    
+/* Style for table rows */
+.cart-table tr {
+    border: none;
+}
+
+/* Style for table header */
+.cart-table th {
+    background-color:#4e4f58;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+/* Style for table cells */
+.cart-table td {
+    padding: 10px;
+    background-color: #848798;
+    border: none; /* Remove individual cell borders */
+    color: white;
+}
+
+/* Style for the cart table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+
+/* Style for product column */
+.cart-table td.product {
+    width: 50%;
+}
+
+/* Style for product image */
+.cart-table td.product img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Style for quantity and price columns */
+.cart-table td.quantity,
+.cart-table td.price {
+    width: 15%;
+}
+
+/* Style for cart count and refresh button */
+#cart-count {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#refresh-cart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#refresh-cart:hover {
+    background-color: #45a049;
+}
+
+#shop {
+    width:100%;
+    display: block;
+}
+
+.Shop_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: tarnslate(-50%,-50%);
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.shop {
+    position: relative;
+}
+
+/* Style for proceed to payment button */
+#proceed-to-payment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.shop {
+    position: relative;
+}
+
+/* Hover effect for proceed to payment button */
+#proceed-to-payment:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Style for remove cart button */
+.remove-item-btn {
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Hover effect for remove cart button */
+.remove-item-btn:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+#apply-promo-code {
+    background-color: #45a049;
+    color: white; /* Set text color to white for better visibility */
+    border: none; /* Remove default button border */
+    padding: 5px 10px; /* Add padding for better appearance */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 20px; /* Add border radius for rounded corners */
+}
+
+#apply-promo-code:hover{
+    background-color: #08c812;
+}
+
+input[type="number"] {
+    border-radius: 5px; /* Add rounded border */
+    padding: 5px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border to the input field */
+}
+
+/* CSS for round border on promo code input */
+#promo-code {
+    border-radius: 5px; /* Add rounded border */
+    padding: 5px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border to the input field */
+}
+
+/* CSS for green promo code text */
+.promo-text {
+    color: green;
+}
+
+

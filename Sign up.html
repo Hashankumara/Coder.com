@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282A35;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #c0dd98;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .form label {
+            font-weight: bold;
+        }
+
+        .user-input-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-input-box input[type="text"],
+        .user-input-box input[type="email"],
+        .user-input-box input[type="password"],
+        .user-input-box input[type="date"],
+        .user-input-box input[type="tel"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .user-input-box input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form-reset-btn,
+        .form-submit-btn {
+            margin-top: 20px;
+        }
+
+        .form-reset-btn input[type="reset"],
+        .form-submit-btn input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4bb973;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-reset-btn input[type="reset"]:hover,
+        .form-submit-btn input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .gender-category {
+            display: flex;
+            align-items: center;
+        }
+
+        .gender-category label {
+            margin-right: 10px;
+        }
+
+        .gender-details-box {
+            grid-column: span 2;
+        }
+
+        .details-title {
+            margin-top: 20px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <section class="details section" id="details">
+            <div class="details-description container">
+                <h2 class="details-title">Sign Up</h2>
+                <div class="details-form-container">
+                    <form class="form" onsubmit="return submitForm();">
+                        <div class="user-input-box">
+                            <label for="username">User name</label>
+                            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="Tel-no">Tel Num</label>
+                            <input type="tel" id="Tel-no" name="Tel-no" placeholder="Telephone no" required>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="password2" name="password2" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="Date">Date of birth</label>
+                            <input type="date" id="Date" name="Date" placeholder="Date" required>
+                        </div>
+                        <div class="gender-details-box">
+                            <label for="gender" class="gender-title">Gender</label>
+                            <div class="gender-category">
+                                <input type="radio" name="gender" id="male" value="male" required>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-reset-btn">
+                            <input type="reset" value="Reset">
+                        </div>
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Form submitted successfully!</p>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            return false; // Preventing the default form submission
+        }
+
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

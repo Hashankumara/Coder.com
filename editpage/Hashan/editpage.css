@@ -1,0 +1,149 @@
+*{
+    padding:0
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+  }
+  .main-content {
+    flex-grow: 1;
+}
+  .a{
+    text-decoration: none;
+  }
+  .card{
+    font-family: 'Times New Roman', Times, serif;
+    width:700px;
+    height:750px;
+    background: #282A35;
+    padding:10px;
+    margin-top: 150px;
+    box-sizing:border-box;
+    text-align:center;
+    border-radius:20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    overflow:hidden;
+    color: white;
+  }
+  .test{
+    text-decoration: none;
+  }
+  .card img{
+    width:120px;
+    height:140px;
+    display:block;
+    margin:auto;
+    border-radius:20%;
+  }
+  .card div h1{
+    margin-top:20px;
+    margin-bottom:20px;
+    line-height:15px;
+    font-size: 25px;
+  }
+  .card div h1 span{
+    font-size:15px;
+    color:white;
+  }
+  .card:before{
+    position:absolute;
+    content:'';
+    width:100px;
+    height:100px;
+    background:#5cff98;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    border-top-left-radius:100px;
+    transition:0.5s;
+  }
+  /* Card Hover Effect */
+  .card:hover:before{
+    transform:scale(17)
+  }
+.task{
+  font-size: 20px;
+  align-items: center;
+}
+.task a{
+  font-size: 19px;
+  cursor: pointer;
+  color: rgba(95, 130, 224, 0.856);
+}
+p{
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
+  align-items: center;
+  color: white;
+}
+.card div h2{
+  font-size: 24px;
+}
+
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .header {
+      padding: 10px 15px;
+  }
+  .navLogo h2 {
+      font-size: 24px;
+  }
+  .navigationBar ul li {
+      margin-left: 25px;
+  }
+  .iconsNav img {
+      margin-right: 40px;
+  }
+  .team-heading {
+      font-size: 40px;
+  }
+  .team-area {
+      flex-direction: column;
+      align-items: center;
+  }
+  .single-team {
+      width: 80%;
+      margin-bottom: 30px;
+  }
+  .footer {
+      padding-top: 30px;
+  }
+  .ft-container {
+      width: 90%;
+  }
+  .footer-content {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .footer-content.left {
+      text-align: center;
+      margin-right: 0;
+  }
+  .footer-content.right {
+      text-align: center;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .navLogo h2 {
+      font-size: 20px;
+  }
+  .navigationBar ul li {
+      margin-left: 15px;
+  }
+  .iconsNav img {
+      margin-right: 20px;
+  }
+  .team-heading {
+      font-size: 30px;
+  }
+}

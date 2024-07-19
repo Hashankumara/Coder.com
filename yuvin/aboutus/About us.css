@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#282A35;
+    margin-top: 60px;
+    font-family: "poppins",sans-serif;;
+}
+
+.wrapper {
+    flex-grow: 1; /* This ensures that the wrapper expands to fill remaining vertical space */
+}
+
+.wrapper .title{
+    text-align: center;
+}
+
+.title h4{
+    display: inline-block;
+    padding: 20px;
+    color:white;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    background-color: #5cff98;
+    margin: 0;
+}
+
+.wrapper .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.navbar {
+    position:absolute;
+    top: 0;
+    width: 80%;
+    z-index: 999; /* Ensure the navbar appears above other content */
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    align-items: center; /* Center the navbar vertically */
+    padding: 20px;
+    background-color: #282A35;
+    border-radius: 50px; /* Remove border-radius */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #5cff98;
+    padding: 7px 15px;
+}
+
+.navbar ul li a:hover {
+    color: rgb(154, 255, 194);
+    border-radius: 3px;
+}
+
+.font-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color:#282A35;
+    padding: 70px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #4bb973;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer-col p{
+	color:#8c908d
+}
+
+.nav__link .button {
+    background-color: #5cff98;
+    color: #282A35;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav__link .button:hover {
+    background-color: #3fb17a; /* Change background color on hover */
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+html {
+    position: relative;
+    min-height: 80%;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px; /* Adjust this value to accommodate the height of your footer */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust this value based on your footer's height */
+}
+
+

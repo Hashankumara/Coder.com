@@ -1,0 +1,69 @@
+body{
+    font-family: "Noto Serif";
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 15%;
+    margin-left: 55%;
+    -webkit-text-stroke: 2px rgb(green);
+}
+
+.content h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.student-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.student-list-animated  {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.website-icon {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}

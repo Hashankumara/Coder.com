@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F2833;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #c0dd98;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="radio"], label {
+    margin: 0 10px;
+  }
+  
+  button {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }

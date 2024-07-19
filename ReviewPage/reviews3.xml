@@ -1,0 +1,16 @@
+<reviews>
+  <review>
+    <image>img-5</image>
+    <firstName>Sarah</firstName>
+    <position>Student</position>
+    <reviewText>Great explanations, very helpful for beginners.</reviewText>
+    <rating>1</rating> <!-- Rating out of 5 -->
+  </review>
+  <review>
+    <image>img-6</image>
+    <firstName>Chris</firstName>
+    <position>Programmer</position>
+    <reviewText>Awesome website, love the interactive coding exercises!</reviewText>
+    <rating>3</rating> <!-- Rating out of 5 -->
+  </review>
+</reviews>

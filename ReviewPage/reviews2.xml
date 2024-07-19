@@ -1,0 +1,16 @@
+<reviews>
+  <review>
+    <image>img-3</image>
+    <firstName>Amy</firstName>
+    <position>Software Engineer</position>
+    <reviewText>Helped me a lot in my programming journey.</reviewText>
+    <rating>3</rating> <!-- Rating out of 5 -->
+  </review>
+  <review>
+    <image>img-4</image>
+    <firstName>Mike</firstName>
+    <position>Web Developer</position>
+    <reviewText>Easy to understand tutorials!</reviewText>
+    <rating>4</rating> <!-- Rating out of 5 -->
+  </review>
+</reviews>

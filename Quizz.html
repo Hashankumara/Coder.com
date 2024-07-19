@@ -1,0 +1,151 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+    <link rel="stylesheet" href="hashan/quizz/Quizz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-welcome-area" class='quizz-welcome-box'>
+          <h1>Quiz</h1>
+          <h2> Welcome to the Quiz</h2>
+          <br>
+          <p>1. This Quiz consists of 5 questions.</p>
+          <p>2. You have 60 seconds to answer.</p>
+          <p>3. You will get 2 points for each correct answer.</p>
+          <p>4. You will receive -1 points for incorrect answers. </p>
+          <p>5. Click the start button to begin. GOOD LUCK!</p>
+
+            <button type='button' id="start-btn" class="start-button">Start</button>
+        </div>
+    
+        <div class="quiz_learning">
+            <div class="mak_box">
+                <div class="timer1">Time left: 10 seconds</div>
+                <h1 class='question-number'>Question 1 </h1>
+                <h2 class="lr_questions">Which HTML attribute is used to specify additional information about an element?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Class</div>
+                    <div class="option" id="B">B: ID</div>
+                    <div class="option" id="C">C: Style</div>
+                    <div class="option" id="D">D: Title</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">Next
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer2">Time left: 10 seconds</div>
+                <h1 class='question-number'>Question 2 </h1>
+                <h2 class="lr_questions">Which keyword is used to define a class in Java?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: This</div>
+                    <div class="option" id="B">B: Void</div>
+                    <div class="option" id="C">C: New</div>
+                    <div class="option" id="D">D: Class</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">Next
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer3">Time left: 10 seconds</div>
+                <h1 class='question-number'>Question 3 </h1>
+                <h2 class="lr_questions">What does the range() function in Python return?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: A list of integers</div>
+                    <div class="option" id="B">B: A generator object</div>
+                    <div class="option" id="C">C: A tuple of integers</div>
+                    <div class="option" id="D">D: A dictionary of integers</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">Next
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer4">Time left: 10 seconds</div>
+                <h1 class='question-number'>Question 4 </h1>
+                <h2 class="lr_questions">Which CSS property is used to change the text color of an element?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: text-color</div>
+                    <div class="option" id="B">B: font-color</div>
+                    <div class="option" id="C">C: color</div>
+                    <div class="option" id="D">D: text-style</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">Next
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer5">Time left: 10 seconds</div>
+                <h1 class='question-number'>Question 5 </h1>
+                <h2 class="lr_questions">What does the len() function do in Python?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Returns the total number of characters in a string</div>
+                    <div class="option" id="B">B: Returns the number of elements in a list, tuple, or string</div>
+                    <div class="option" id="C">C: Returns the largest element in a list</div>
+                    <div class="option" id="D">D: Returns the sum of all elements in a listpray</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">Next
+                  </button>
+            </div>
+        </div>
+    
+        <div class="lr_quiz_result">
+            <h2>You have scored: </h2>
+            <div class="lr_questions_container1">
+                <div class="lr_questions">Which HTML attribute is used to specify additional information about an element?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: A:  Class</div>
+            </div>
+            <br>
+            <div class="lr_questions_container2">
+                <div class="lr_questions">Which keyword is used to define a class in Java?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: D:  Class</div>
+            </div>
+            <br>
+            <div class="lr_questions_container3">
+                <div class="lr_questions">What does the range() function in Python return?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: B: A generator object</div>
+            </div>
+            <br>
+            <div class="lr_questions_container4">
+                <div class="lr_questions">Which CSS property is used to change the text color of an element?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: C:  color</div>
+            </div>
+            <br>
+            <div class="lr_questions_container5">
+                <div class="lr_questions">What does the len() function do in Python?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: C: Returns the largest element in a list</div>
+            </div>
+            
+                
+           
+            <br>
+            <button class="retake-btn">Retake Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="hashan/quizz/quiz.js"></script>
+</body>
+</html>
